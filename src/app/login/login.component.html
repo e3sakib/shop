@@ -1,0 +1,18 @@
+<form (ngSubmit)="checkLogin()">
+    <table>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="username" [(ngModel)]="login.username" id="username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" [(ngModel)]="login.password" id="password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+<a routerLink="product">Product Repository</a>
+<router-outlet></router-outlet>
